@@ -1,0 +1,317 @@
+:root {
+  --cor-cinza: #d4d5d0;
+  --cor-amarela: #f8d10f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif !important;
+}
+
+body {
+  background: #efefef;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #4092af;
+  padding: ;
+}
+
+#logo {
+  width: 90px;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f8d10f;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d4d5d0;
+}
+
+.main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.about-title {
+  font-size: 1.2rem;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+#about-list i {
+  margin-right: 15px;
+  color: #4092af;
+}
+
+.img-fluid {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.intro {
+  padding: 0px 0 0 0;
+}
+
+.intro-titulo {
+  font-size: 5rem;
+  color: #4092af;
+}
+
+.intro-subtitulo {
+  font-size: 2.5rem;
+  padding-bottom: 50px;
+  color: #4092af;
+}
+
+.intro-texto {
+  padding-top: 30px;
+  font-size: 1.2rem;
+}
+
+.topico-titulo {
+  font-size: 3.5rem;
+  border-bottom: 1px solid var(--color-gray, #dbdbdb);
+  padding: 100px 0 40px 0;
+  color: #716d73;
+  font-weight: bold;
+}
+
+.texto-cima {
+  padding-top: 40px;
+}
+
+.texto-lista {
+  padding-top: 30px;
+}
+
+.topico-texto {
+  font-size: 1.2rem;
+}
+
+.main {
+  padding: 0 10%;
+  margin-top: 16px;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.cardzin{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  height: 100%;
+}
+
+.carrosel {
+  position: absolute;
+  right: 60%;
+  top: 35%;
+}
+
+.carousel-item img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.carrosel h5 {
+  font-size: 3rem;
+}
+
+.botao-carrosel {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #4092af;
+  text-decoration: none;
+}
+
+.botao-carrosel:hover {
+  background-color: #f8d10f;
+  transition: 0.5s;
+  color: black;
+}
+
+.card-container {
+  padding-bottom: 24px;
+}
+
+.footer {
+  background: #4092af;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+}
+
+.footer .social {
+  gap: 16px;
+}
+
+.footer .social img {
+  width: 32px;
+}
+
+.footer div ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.footer div ul li a {
+  color: white !important;
+}
+
+.footer div ul li a:hover {
+  color: #d4d5d0;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    width: 60px;
+  }
+
+  .main-title {
+    font-size: 6vw;
+  }
+
+  .intro-titulo {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .intro-subtitulo {
+    font-size: 4vw;
+    padding-bottom: 0;
+  }
+
+  .topico-titulo {
+    font-size: 6vw;
+    padding: 60px 0 20px 0;
+  }
+
+  .topico-texto {
+    font-size: 1.3rem;
+  }
+
+  .carrosel h5 {
+    font-size: 5.5vw;
+  }
+  .about-title {
+    margin-top: 16px;
+  }
+
+  .img-curriculo {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer div {
+    flex-direction: column;
+  }
+
+  .footer .social {
+    flex-direction: row;
+    margin: 16px 0px;
+  }
+
+  .footer #logo {
+    width: 90px;
+  }
+
+  #team-area .col-md-3{
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 8vw;
+  }
+
+  .intro-titulo {
+    font-size: 10vw;
+  }
+
+  .intro-subtitulo {
+    font-size: 5.5vw;
+  }
+
+  .topico-titulo {
+    font-size: 7vw;
+  }
+
+  .topico-texto {
+    font-size: 1.4rem;
+  }
+
+  .carrosel h5 {
+    font-size: 7.5vw;
+  }
+
+  .main {
+    padding: 0 5%;
+  }
+
+  #team-area .col-md-3{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
